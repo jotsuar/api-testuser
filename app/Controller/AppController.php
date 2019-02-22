@@ -161,6 +161,13 @@ class AppController extends Controller {
 		return $data;
 	}
 
+	public function welcome(){
+		$this->set([
+		  "msg"        => "Hello Api test User",
+		  '_serialize' => "msg"
+		]);
+	}
+
 
 
 }
